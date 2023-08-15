@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog and digital clock</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <div id="body" class="container-fluid">
+        
+        <div class="row">
+            <div class="d-flex full-view-height col-12 justify-content-center align-items-center">
+                
+                <div class="clock ">
+                    <div class="mode text-center  ">
+                        <input onclick="modee()" id="mode" type="checkbox"><br>
+                        <label id="modelab" for="mode"> <span id="modelabsp"></span> </label><br>
+                        <span id="modelabel">Day Mode</span>
+                    </div>
+                    <div class="clock-dial">
+                        <h4 id="myname" >Asvin Developer</h4>
+                        <h5 id="numbers"> <span>1</span>
+                            <span>2</span>
+                            <span>3</span>
+                            <span>4</span>
+                            <span>5</span>
+                            <span>6</span>
+                            <span>7</span>
+                            <span>8</span>
+                            <span>9</span>
+                            <span>10</span>
+                            <span>11</span>
+                            <span>12</span>
+                        </h5>
+                        <div id="second-pointer-ring">
+                            <div id="second-pointer"></div>
+                        </div>
+                        <div id="minute-pointer-ring">
+                            <div id="minute-pointer"></div>
+                        </div>
+                        <div id="hour-pointer-ring">
+                            <div id="hour-pointer"></div>
+                        </div>
+                    </div>
+                    <div class="text-center  pt-5">
+                        <div id="digital-clock">
+                            <span id="hours">00</span>
+                            <span>:</span>
+                            <span id="minutes">00</span>
+                            <span>:</span>
+                            <span id="seconds">00</span>
+                            <span class="am" id="ampm">AM</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,276 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.full-view-height {
+    height: 100vh;
+}
+
+.clock-dial {
+    height: 260px;
+    width: 260px;
+    border-radius: 50%;
+    background-color: rgb(250, 250, 34);
+    position: relative;
+    outline: 10px solid black;
+
+}
+
+.clock-dial h4 {
+    position: absolute;
+    font-size: 15px;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    color: rgb(2, 2, 154);
+}
+
+
+.clock-dial span:nth-child(12) {
+    position: absolute;
+    left: 51%;
+    top: 5px;
+    transform: translate(-50%);
+}
+
+.clock-dial h5 span:nth-child(6) {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+.clock-dial h5 span:nth-child(3) {
+    position: absolute;
+    top: 45%;
+    right: 5px;
+}
+
+.clock-dial h5 span:nth-child(9) {
+    position: absolute;
+    top: 45%;
+    left: 5px;
+}
+
+.clock-dial h5 span:nth-child(1) {
+    position: absolute;
+    top: 7%;
+    right: 27%;
+}
+
+.clock-dial h5 span:nth-child(11) {
+    position: absolute;
+    top: 7%;
+    left: 27%;
+}
+
+.clock-dial h5 span:nth-child(2) {
+    position: absolute;
+    top: 23%;
+    right: 10%;
+}
+
+.clock-dial h5 span:nth-child(10) {
+    position: absolute;
+    top: 23%;
+    left: 10%;
+}
+
+.clock-dial h5 span:nth-child(5) {
+    position: absolute;
+    bottom: 7%;
+    right: 27%;
+}
+
+.clock-dial h5 span:nth-child(7) {
+    position: absolute;
+    bottom: 7%;
+    left: 27%;
+}
+
+.clock-dial h5 span:nth-child(4) {
+    position: absolute;
+    bottom: 23%;
+    right: 10%;
+}
+
+.clock-dial h5 span:nth-child(8) {
+    position: absolute;
+    bottom: 23%;
+    left: 10%;
+}
+
+#digital-clock {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+
+#second-pointer-ring {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: 49%;
+    top: 49%;
+    background-color: rgb(255, 0, 0);
+    z-index: 3;
+
+
+}
+
+#second-pointer {
+    content: "";
+    position: absolute;
+    left: 38%;
+    bottom: 0;
+    width: 2px;
+    height: 107px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50px;
+    z-index: 3;
+}
+
+
+
+#minute-pointer-ring {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    scale: 1.4;
+    position: absolute;
+    left: 49%;
+    top: 49%;
+    background-color: rgb(0, 0, 0);
+    z-index: 2;
+
+
+}
+
+#minute-pointer {
+    content: "";
+    position: absolute;
+    left: 38%;
+    bottom: 0;
+    width: 2px;
+    height: 67px;
+    background-color: rgb(12, 0, 0);
+    border-radius: 50px;
+    z-index: 2;
+
+}
+
+
+#hour-pointer-ring {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: 49%;
+    top: 49%;
+    background-color: rgb(4, 0, 255);
+    z-index: 2;
+    scale: 1.6;
+    z-index: 1;
+
+
+}
+
+#hour-pointer {
+    content: "";
+    position: absolute;
+    left: 38%;
+    bottom: 0;
+    width: 2px;
+    height: 45px;
+    background-color: rgb(72, 0, 255);
+    border-radius: 50px;
+    z-index: 1;
+
+}
+
+.mode {
+    padding-bottom: 50px;
+}
+
+#mode {
+    display: none;
+}
+
+#modelabel {
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+#modelab {
+    width: 60px;
+    height: 30px;
+    background-color: white;
+    border-radius: 100px;
+    position: relative;
+    outline: 1px solid rgb(38, 0, 255);
+}
+
+#modelabsp {
+    position: absolute;
+    left: 4px;
+    top: 10%;
+    height: 23px;
+    width: 23px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0.2px 0.2px 4px rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+.am{
+    animation: am 5s ease infinite;
+}
+.pm{
+    animation: pm 5s ease infinite;
+}
+
+
+@keyframes am {
+    0% {
+        color: red;
+    }
+
+    25% {
+        color: blue;
+    }
+
+    50% {
+        color: green;
+    }
+    75%{
+        color: coral;
+    }
+
+    100%{
+        color: brown;
+    }
+}
+
+@keyframes pm {
+    0% {
+        color: rgb(251, 176, 176);
+    }
+
+    25% {
+        color: rgb(212, 212, 253);
+    }
+
+    50% {
+        color: rgb(135, 248, 135);
+    }
+    75%{
+        color: rgb(255, 187, 163);
+    }
+
+    100%{
+        color: rgb(255, 175, 175);
+    }
+}
+
